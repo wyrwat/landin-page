@@ -2,6 +2,16 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  display: flex;
+}
+
+.nav-container {
+  width: 1424px;
+  height: 729px;
+  margin: 0 auto;
+}
+
 .link-elements {
   display: flex;
   margin-top: 73px;
@@ -34,8 +44,40 @@ body {
   text-decoration: none;
 }
 
+.menu {
+  color: #fff;
+}
+
 .golden {
   color: #fed136;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  color: #fff;
+  padding-bottom: 59px;
+  padding-top: 52px;
+}
+
+.header h2 {
+  color: #fff;
+  font-size: 40px;
+  font-style: italic;
+  letter-spacing: -1px;
+}
+
+.header .tellMeMore {
+  background-color: #fed136;
+  border: none;
+  width: 240px;
+  height: 65px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 2px;
+  margin-bottom: 160px;
 }
 
 .nav-image {
@@ -43,8 +85,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1424px;
-  height: 729px;
+  width: 1400px;
+  height: 700px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
