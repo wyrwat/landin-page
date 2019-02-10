@@ -1,5 +1,5 @@
-$fonts : Montserrat;
-$fonts-logo : Wisdom - Script;
+$font-1 : Montserrat;
+$font-logo : Wisdom - Script;
 $font-color-1: #fff;
 
 body {
@@ -54,6 +54,7 @@ body {
 
 .golden {
 		color: #fed136;
+		font-family: $font-logo;
 	}
 
 .header {
@@ -62,6 +63,11 @@ body {
 		color: $font-color-1;
 		padding-bottom: 59px;
 		padding-top: 52px;
+		font-family: $font-1;
+		font-size: 75px;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: -1.88px;
 	}
 
 	h2 {
@@ -73,13 +79,15 @@ body {
 
 	.tellMeMore {
 		background-color: #fed136;
+		font-family: $font-1;
 		border: none;
 		width: 240px;
 		height: 65px;
 		font-size: 18px;
-		font-weight: 700;
-		border-radius: 2px;
+		font-weight: 900;
+		border-radius: 5px;
 		margin-bottom: 160px;
+		text-transform: uppercase;
 	}
 }	
 

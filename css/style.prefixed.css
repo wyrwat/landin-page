@@ -52,6 +52,7 @@ body {
 
 .golden {
   color: #fed136;
+  font-family: Wisdom-Script;
 }
 
 .header {
@@ -62,6 +63,11 @@ body {
   color: #fff;
   padding-bottom: 59px;
   padding-top: 52px;
+  font-family: Montserrat;
+  font-size: 75px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -1.88px;
 }
 
 .header h2 {
@@ -73,13 +79,15 @@ body {
 
 .header .tellMeMore {
   background-color: #fed136;
+  font-family: Montserrat;
   border: none;
   width: 240px;
   height: 65px;
   font-size: 18px;
-  font-weight: 700;
-  border-radius: 2px;
+  font-weight: 900;
+  border-radius: 5px;
   margin-bottom: 160px;
+  text-transform: uppercase;
 }
 
 .nav-image {
