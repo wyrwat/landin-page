@@ -110,19 +110,7 @@ body {
 }
 
 .services {
-
-	ul{
-		li {
-			list-style-type: none;
-		}
-		.row {
-			flex-direction: row;
-		}
-	}
-    .text {
-    	display: flex;
-    	justify-content: center;
-    }
+    text-align: center;
 
     h2 {
     	margin-top: 120px;
@@ -140,6 +128,35 @@ body {
 		font-size: 16px;
 		font-style: italic;
     }
+
+    .row{
+		
+		flex-direction: row;
+		justify-content: space-around;
+		
+			.icon-align {
+			}
+
+			li {
+				list-style-type: none;
+
+				.icon  {
+					position: relative;
+					right: 20px;
+					font-size: 40px;
+					color: #fed136;
+					border: 1px solid #fed136;
+					line-height: 67px;
+					width: 67px;
+					text-align: center;
+					border-radius: 50%;
+				}
+
+			}
+
+
+		}
 }
+
 
 

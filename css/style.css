@@ -98,17 +98,8 @@ body {
   margin-top: 42px;
 }
 
-.services ul li {
-  list-style-type: none;
-}
-
-.services ul .row {
-  flex-direction: row;
-}
-
-.services .text {
-  display: flex;
-  justify-content: center;
+.services {
+  text-align: center;
 }
 
 .services h2 {
@@ -126,6 +117,27 @@ body {
   font-family: "Droid Serif";
   font-size: 16px;
   font-style: italic;
+}
+
+.services .row {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.services .row li {
+  list-style-type: none;
+}
+
+.services .row li .icon {
+  position: relative;
+  right: 20px;
+  font-size: 40px;
+  color: #fed136;
+  border: 1px solid #fed136;
+  line-height: 67px;
+  width: 67px;
+  text-align: center;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
