@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
 }
@@ -5,18 +9,16 @@ body {
 .container {
   display: -ms-flexbox;
   display: flex;
-}
-
-.nav-container {
-  width: 1424px;
-  height: 729px;
   margin: 0 auto;
 }
 
+.nav-container {
+  max-width: 1424px;
+  max-height: 742px;
+}
+
 .link-elements {
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 73px;
+  margin-top: 55px;
   margin-left: 249px;
 }
 
@@ -24,7 +26,6 @@ body {
   list-style-type: none;
   font-size: 14px;
   padding-right: 40px;
-  padding-top: 70px;
   font-family: Montserrat;
   font-weight: 400;
   line-height: 41px;
@@ -59,22 +60,21 @@ body {
   text-align: center;
 }
 
-.header h1 {
-  color: #fff;
-  padding-bottom: 59px;
-  padding-top: 52px;
-  font-family: Montserrat;
-  font-size: 75px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: -1.88px;
-}
-
 .header h2 {
   color: #fff;
+  margin-top: 212px;
   font-size: 40px;
   font-style: italic;
   letter-spacing: -1px;
+}
+
+.header h1 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 75px;
+  text-transform: uppercase;
+  letter-spacing: -1.88px;
+  margin-top: 52px;
 }
 
 .header .tellMeMore {
@@ -84,7 +84,6 @@ body {
   width: 240px;
   height: 65px;
   font-size: 18px;
-  font-weight: 900;
   border-radius: 5px;
   margin-bottom: 160px;
   text-transform: uppercase;
@@ -95,8 +94,41 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1400px;
-  height: 700px;
-  margin: 0 auto;
+  width: 1403px;
+  height: 742px;
+  margin-top: 42px;
+}
+
+.services ul li {
+  list-style-type: none;
+}
+
+.services ul .row {
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.services .text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.services h2 {
+  margin-top: 120px;
+  font-family: Montserrat;
+  font-size: 40px;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.services p {
+  margin-top: -30px;
+  color: #777777;
+  font-family: "Droid Serif";
+  font-size: 16px;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
