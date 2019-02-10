@@ -102,7 +102,7 @@ body {
   text-align: center;
 }
 
-.services h2 {
+.services .service {
   margin-top: 120px;
   font-family: Montserrat;
   font-size: 40px;
@@ -111,8 +111,8 @@ body {
   letter-spacing: -1px;
 }
 
-.services p {
-  margin-top: -30px;
+.services .text {
+  margin-top: -19px;
   color: #777777;
   font-family: "Droid Serif";
   font-size: 16px;
@@ -122,6 +122,18 @@ body {
 .services .row {
   flex-direction: row;
   justify-content: space-around;
+  position: relative;
+  right: 20px;
+}
+
+.services .row .align-left {
+  position: relative;
+  left: 90px;
+}
+
+.services .row .align-right {
+  position: relative;
+  right: 90px;
 }
 
 .services .row li {
@@ -129,8 +141,6 @@ body {
 }
 
 .services .row li .icon {
-  position: relative;
-  right: 20px;
   font-size: 40px;
   color: #fed136;
   border: 1px solid #fed136;
@@ -138,6 +148,31 @@ body {
   width: 67px;
   text-align: center;
   border-radius: 50%;
+  margin-top: 96px;
+}
+
+.services .row li .eCommerce h2,
+.services .row li .responsiveWeb h2,
+.services .row li .webSecurity h2 {
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: -0.45px;
+}
+
+.services .row li .eCommerce p,
+.services .row li .responsiveWeb p,
+.services .row li .webSecurity p {
+  width: 274px;
+  height: 57px;
+  color: #777777;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+  margin-bottom: 118px;
 }
 
 /*# sourceMappingURL=style.css.map */
