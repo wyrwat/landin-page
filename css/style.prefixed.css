@@ -247,4 +247,140 @@ body {
   font-size: 14px;
   font-style: italic;
 }
+
+.about-us {
+  text-align: center;
+}
+
+.about-us h2 {
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.about-us p {
+  color: #777777;
+  font-family: "Droid Serif";
+  font-size: 16px;
+  font-style: italic;
+}
+
+.about-us .history-container {
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-us .history-container .about-photo-container {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.about-us .history-container .about-photo-container .about-photo {
+  border-radius: 50%;
+  border: 7px solid #f1f1f1;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.about-us .history-container .history {
+  width: 307px;
+  text-align: right;
+}
+
+.about-us .history-container .history h3 {
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+  text-transform: uppercase;
+  letter-spacing: -0.45px;
+}
+
+.about-us .history-container .history h4 {
+  margin-top: -10px;
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.about-us .history-container .history p {
+  margin-top: -15px;
+  color: #777777;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+}
+
+.about-us .history-container .history-2 {
+  width: 307px;
+  text-align: left;
+}
+
+.about-us .history-container .history-2 h3 {
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+  text-transform: uppercase;
+  letter-spacing: -0.45px;
+}
+
+.about-us .history-container .history-2 h4 {
+  margin-top: -10px;
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.about-us .history-container .history-2 p {
+  margin-top: -15px;
+  color: #777777;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+}
+
+.about-us .history-container .last-photo {
+  position: relative;
+  text-align: center;
+  background-color: #fed136;
+  border-radius: 50%;
+  width: 168px;
+  height: 168px;
+  border: 7px solid #f1f1f1;
+}
+
+.about-us .history-container .last-photo p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.45px;
+}
+
+.vl {
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 3px;
+  height: 94px;
+  background-color: red;
+}
 /*# sourceMappingURL=style.prefixed.css.map */
