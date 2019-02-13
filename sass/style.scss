@@ -13,8 +13,6 @@ body {
 
 .container {
 	display: flex;
-	margin: 0 auto;
-
 }
 
 .nav-container {
@@ -111,10 +109,8 @@ body {
 
 .services {
     text-align: center;
-
-    
-
-    	.service {
+		
+		.service {
 	    	margin-top: 120px;
 			font-family: $font-1;
 			font-size: 40px;
@@ -131,12 +127,12 @@ body {
 			font-style: italic;
     	}
 
-    .row{
-		
+    	.row {
 		flex-direction: row;
 		justify-content: space-around;
 		position: relative;
 		right: 20px;
+
 			.align-left {
 				position: relative;
 				left: 90px;
@@ -184,17 +180,54 @@ body {
 						letter-spacing: -0.35px;
 						margin-bottom: 118px;
 					}
+				}
+			}
+		}
+	}
+
+.portfolio {
+	text-align: center;
+
+		h2 {
+			color: #222222;
+			font-family: $font-1;
+			font-size: 40px;
+			font-weight: 700;
+			line-height: 75px;
+			text-transform: uppercase;
+			letter-spacing: -1px;
+		}
+
+		.portfolio {
+			color: #777777;
+			font-family: "Droid Serif";
+			font-size: 16px;
+			font-style: italic;
+		}
+
+		.gallery-container {
+			flex-wrap: wrap;
+			justify-content: center;
+
+			.photo-container {
+				flex-direction: column;
+    			
+    			.photo {
+    				margin: 37px;
+    				position: relative;
+    			}
+
+    			h3 {
+    				margin-top: -8px;
+    			}
 				
+				p {
+					margin-top: -4px;
+				}
 			}
-
-			
-
-
-			}
-
-
 		}
 }
+
 
 
 

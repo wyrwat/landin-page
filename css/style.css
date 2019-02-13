@@ -8,7 +8,6 @@ body {
 
 .container {
   display: flex;
-  margin: 0 auto;
 }
 
 .nav-container {
@@ -173,6 +172,49 @@ body {
   font-weight: 400;
   letter-spacing: -0.35px;
   margin-bottom: 118px;
+}
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio h2 {
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.portfolio .portfolio {
+  color: #777777;
+  font-family: "Droid Serif";
+  font-size: 16px;
+  font-style: italic;
+}
+
+.portfolio .gallery-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio .gallery-container .photo-container {
+  flex-direction: column;
+}
+
+.portfolio .gallery-container .photo-container .photo {
+  margin: 37px;
+  position: relative;
+}
+
+.portfolio .gallery-container .photo-container h3 {
+  margin-top: -8px;
+}
+
+.portfolio .gallery-container .photo-container p {
+  margin-top: -4px;
 }
 
 /*# sourceMappingURL=style.css.map */
