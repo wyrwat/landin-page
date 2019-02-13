@@ -187,6 +187,11 @@ body {
 
 .portfolio {
 	text-align: center;
+	background-color: #f7f7f7;
+	
+		.bottom {
+			padding-bottom: 120px;
+		}
 
 		h2 {
 			color: #222222;
@@ -196,9 +201,10 @@ body {
 			line-height: 75px;
 			text-transform: uppercase;
 			letter-spacing: -1px;
+			padding-top: 120px;
 		}
 
-		.portfolio {
+		.porfolio-description{
 			color: #777777;
 			font-family: "Droid Serif";
 			font-size: 16px;
@@ -211,19 +217,37 @@ body {
 
 			.photo-container {
 				flex-direction: column;
-    			
+				    			
     			.photo {
     				margin: 37px;
-    				position: relative;
     			}
+				.info {
 
-    			h3 {
-    				margin-top: -8px;
-    			}
-				
-				p {
-					margin-top: -4px;
-				}
+					width: 291px;
+					height: 93px;
+					background-color: #ffffff;
+					flex-direction: column;
+					justify-content: center;
+					margin-left: 37px;
+					margin-top: -37px;
+
+	    			h3 {
+	
+						color: #333333;
+						font-family: $font-1;
+						font-size: 18px;
+						font-weight: 700;
+						letter-spacing: -0.45px;
+	    			}
+					
+					p {
+						margin-top: -4px;
+						color: #737373;
+						font-family: "Droid Serif";
+						font-size: 14px;
+						font-style: italic;
+					}
+				}	
 			}
 		}
 }

@@ -176,6 +176,11 @@ body {
 
 .portfolio {
   text-align: center;
+  background-color: #f7f7f7;
+}
+
+.portfolio .bottom {
+  padding-bottom: 120px;
 }
 
 .portfolio h2 {
@@ -186,9 +191,10 @@ body {
   line-height: 75px;
   text-transform: uppercase;
   letter-spacing: -1px;
+  padding-top: 120px;
 }
 
-.portfolio .portfolio {
+.portfolio .porfolio-description {
   color: #777777;
   font-family: "Droid Serif";
   font-size: 16px;
@@ -206,15 +212,32 @@ body {
 
 .portfolio .gallery-container .photo-container .photo {
   margin: 37px;
-  position: relative;
 }
 
-.portfolio .gallery-container .photo-container h3 {
-  margin-top: -8px;
+.portfolio .gallery-container .photo-container .info {
+  width: 291px;
+  height: 93px;
+  background-color: #ffffff;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 37px;
+  margin-top: -37px;
 }
 
-.portfolio .gallery-container .photo-container p {
+.portfolio .gallery-container .photo-container .info h3 {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+}
+
+.portfolio .gallery-container .photo-container .info p {
   margin-top: -4px;
+  color: #737373;
+  font-family: "Droid Serif";
+  font-size: 14px;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=style.css.map */
