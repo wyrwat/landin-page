@@ -440,6 +440,8 @@ body {
 .team .team-container .team-photo-container .team-photo {
   margin: 25px;
   border-radius: 50%;
+  width: 221px;
+  height: 221px;
 }
 
 .team .team-container .team-photo-container .team-icon {
