@@ -1,7 +1,44 @@
-$font-1 : Montserrat;
-$font-2 : Droid-Serif;
-$font-logo : Wisdom - Script;
+$font-1 : "Montserrat";
+$font-2 : "Droid-Serif";
+$font-3 : "Roboto Slab";
+$font-logo : monospace;
 $font-color-1: #fff;
+$color-1: #fed136;
+$color-2: #777777;
+$color-3: #222222;
+$color-4: #ffffff;
+$color-5: #333333;
+$color-6: #737373;
+$color-7: #f7f7f7;
+$color-8: #f1f1f1;
+$color-9: #cccccc;
+$color-10: #bbbbbb;
+$color-11: #555555;
+
+@mixin font400($font-weight: 400, $text-transform: uppercase) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+} 
+
+@mixin font700($font-weight: 700, $text-transform: uppercase) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+} 
+
+%font14 {
+    font-size: 14px;
+    font-style: italic;
+}
+
+%font16 {
+	font-size: 16px;
+	font-style: italic;
+}
+
+%font40 {
+	font-size: 40px;
+    font-style: italic;
+}
 
 * {
     box-sizing: border-box;
@@ -16,102 +53,100 @@ body {
 }
 
 .nav-container {
+	flex-wrap: wrap;
 	max-width: 1424px;
 	max-height: 742px;
-}
 
-.link-elements {
-	margin-top: 55px;
-	margin-left: 249px;
-}
+	.nav-image {
+	    background:
+		    linear-gradient(
+			   rgba(0, 0, 0, .6),
+		       rgba(0, 0, 0, .6)),
+		url("../images/Background_Image.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+	    background-size: cover;
+		width: 1403px;
+		height: 742px;
+		
+		.link-elements {
+			margin-top: 55px;
+			margin-left: 249px;
 
-.link-elements li {
-		list-style-type: none;
-		font-size: 14px;
-		padding-right: 40px;
-		font-family: Montserrat;
-		font-weight: 400;
-		line-height: 41px;
-		text-transform: uppercase;
+			.menu {
+				color: $font-color-1;
+			
+			}	
+
+			.golden {
+				color: $color-1;
+				font-family: $font-logo;
+			}
+
+			li {
+				@include font400;
+				list-style-type: none;
+				font-size: 14px;
+				padding-right: 40px;
+				font-family: $font-1;
+				line-height: 41px;
+			}
+
+			li:first-child {
+				margin-right: auto;
+		 		font-size: 26px;
+				font-weight: 400;
+				line-height: 41px;
+			}
+
+			li:last-child {
+				padding-right: 242px;
+			}
+
+			a {
+				text-decoration: none;
+			}
+		}
+
+		.header {
+			text-align: center;
+
+			h2 {
+				@extend %font40;
+				color: $font-color-1;
+				margin-top: 212px;
+				letter-spacing: -1px;
+
+			}
+
+			h1 {
+				color: $font-color-1;
+				font-family: $font-1;
+				font-size: 75px;
+				text-transform: uppercase;
+				letter-spacing: -1.88px;
+				margin-top: 52px;
+			}
+			
+			.tellMeMore {
+				background-color: $color-1;
+				font-family: $font-1;
+				border: none;
+				width: 240px;
+				height: 65px;
+				font-size: 18px;
+				border-radius: 5px;
+				margin-bottom: 160px;
+				text-transform: uppercase;
+
+			}
+		}
 	}
-
-.link-elements li:first-child {
-	margin-right: auto;
- 	font-size: 26px;
-	font-weight: 400;
-	line-height: 41px;
-	}
-
-.link-elements li:last-child {
-	padding-right: 242px;
-	}
-
-.link-elements a {
-		text-decoration: none;
-	}
-
-.menu {
-	color: $font-color-1;
-}	
-
-.golden {
-		color: #fed136;
-		font-family: $font-logo;
-	}
-
-.header {
-	text-align: center;
-
-	h2 {
-		color: $font-color-1;
-		margin-top: 212px;
-		font-size: 40px;
-		font-style: italic;
-		letter-spacing: -1px;
-
-	}
-
-	h1 {
-		color: $font-color-1;
-		font-family: $font-1;
-		font-size: 75px;
-		text-transform: uppercase;
-		letter-spacing: -1.88px;
-		margin-top: 52px;
-	}
-
-	.tellMeMore {
-		background-color: #fed136;
-		font-family: $font-1;
-		border: none;
-		width: 240px;
-		height: 65px;
-		font-size: 18px;
-		border-radius: 5px;
-		margin-bottom: 160px;
-		text-transform: uppercase;
-
-	}
-}	
-
-.nav-image {
-    background:
-	    linear-gradient(
-		   rgba(0, 0, 0, .6),
-	       rgba(0, 0, 0, .6)),
-	url("../images/Background_Image.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-    background-size: cover;
-	width: 1403px;
-	height: 742px;
-	
 }
 
 .services {
     text-align: center;
 
-		
 		.service {
 	    	margin-top: 120px;
 			font-family: $font-1;
@@ -123,15 +158,13 @@ body {
 
      	.text {
 	    	margin-top: -19px;
-			color: #777777;
-			font-family: "Droid Serif";
-			font-size: 16px;
-			font-style: italic;
+			color: $color-2;
+			font-family: $font-2;
+			@extend %font16;
     	}
 
     	.row {
     		flex-wrap: wrap;
-			flex-direction: row;
 			justify-content: space-around;
 			position: relative;
 			right: 20px;
@@ -145,14 +178,14 @@ body {
 				position: relative;
 				right: 90px;
 			}
-*/
+			*/
 			li {
 				list-style-type: none;
 
 				.icon  {
 					font-size: 40px;
-					color: #fed136;
-					border: 1px solid #fed136;
+					color: $color-1;
+					border: 1px solid $color-1;
 					line-height: 67px;
 					width: 67px;
 					text-align: center;
@@ -165,7 +198,7 @@ body {
 				.responsiveWeb, 
 				.webSecurity {
 					h2{
-						color: #222222;
+						color: $color-3;
 						font-family: $font-1;
 						font-size: 18px;
 						font-weight: 700;
@@ -176,8 +209,8 @@ body {
 					p {
 						width: 274px;
 						height: 57px;
-						color: #777777;
-						font-family: "Roboto Slab";
+						color: $color-2;
+						font-family:$font-3;
 						font-size: 14px;
 						font-weight: 400;
 						letter-spacing: -0.35px;
@@ -190,28 +223,26 @@ body {
 
 .portfolio {
 	text-align: center;
-	background-color: #f7f7f7;
+	background-color: $color-7;
 	
 		.bottom {
 			padding-bottom: 120px;
 		}
 
 		h2 {
-			color: #222222;
+			@include font700;
+			color: $color-3;
 			font-family: $font-1;
 			font-size: 40px;
-			font-weight: 700;
 			line-height: 75px;
-			text-transform: uppercase;
 			letter-spacing: -1px;
 			padding-top: 120px;
 		}
 
 		.porfolio-description{
-			color: #777777;
-			font-family: "Droid Serif";
-			font-size: 16px;
-			font-style: italic;
+			color: $color-2;
+			font-family: $font-2;
+			@extend %font16;
 		}
 
 		.gallery-container {
@@ -224,19 +255,18 @@ body {
     			.photo {
     				margin: 37px;
     			}
-				.info {
 
+				.info {
 					width: 291px;
 					height: 93px;
-					background-color: #ffffff;
+					background-color: $color-4;
 					flex-direction: column;
 					justify-content: center;
 					margin-left: 37px;
 					margin-top: -37px;
 
 	    			h3 {
-	
-						color: #333333;
+						color: $color-5;
 						font-family: $font-1;
 						font-size: 18px;
 						font-weight: 700;
@@ -245,10 +275,9 @@ body {
 					
 					p {
 						margin-top: -4px;
-						color: #737373;
-						font-family: "Droid Serif";
-						font-size: 14px;
-						font-style: italic;
+						color: $color-6;
+						font-family: $font-2;
+						@extend %font14;
 					}
 				}	
 			}
@@ -259,20 +288,18 @@ body {
 	text-align: center;
 
 	h2 {
-		color: #222222;
+		@include font700;
+		color: $color-3;
 		font-family: $font-1;
 		font-size: 40px;
-		font-weight: 700;
 		line-height: 75px;
-		text-transform: uppercase;
 		letter-spacing: -1px;
 	} 
 
 	p {
-		color: #777777;
-		font-family: "Droid Serif";
-		font-size: 16px;
-		font-style: italic;
+		color: $color-2;
+		font-family: $font-2;
+		@extend %font16;
 			}
 	
 	.history-container {
@@ -284,29 +311,27 @@ body {
 
 			.about-photo {
 				border-radius: 50%;
-				border: 7px solid #f1f1f1;
+				border: 7px solid $color-7;
 				margin-left: 45px;
 				margin-right: 45px;
 				}
 			}
 		
-
 		.history {
 			width: 307px;
 			text-align: right;
+		
 			h3 {
-				color: #222222;
+				color: $color-3;
 				font-family: $font-1;
 				font-size: 18px;
-				font-weight: 700;
 				letter-spacing: -0.45px;
-				text-transform: uppercase;
-				letter-spacing: -0.45px;
+				@include font700;
 			}
 
 			h4 {
 				margin-top: -10px;
-				color: #222222;
+				color: $color-3;
 				font-family: $font-1;
 				font-size: 18px;
 				font-weight: 700;
@@ -314,11 +339,10 @@ body {
 
 			p {
 				margin-top: -15px;
-				color: #777777;
-				font-family: "Roboto Slab";
+				color: $color-2;
+				font-family: $font-3;
 				font-size: 14px;
 				font-weight: 400;
-				// Text style for "P, roin ia"
 				letter-spacing: -0.35px;
 			}
 		}	
@@ -326,19 +350,19 @@ body {
 		.history-2 {
 			width: 307px;
 			text-align: left;
+			
 			h3 {
-				color: #222222;
+				color: $color-3;
 				font-family: $font-1;
 				font-size: 18px;
-				font-weight: 700;
 				letter-spacing: -0.45px;
-				text-transform: uppercase;
 				letter-spacing: -0.45px;
+				@include font700;
 			}
 
 			h4 {
 				margin-top: -10px;
-				color: #222222;
+				color: $color-3;
 				font-family: $font-1;
 				font-size: 18px;
 				font-weight: 700;
@@ -346,11 +370,10 @@ body {
 
 			p {
 				margin-top: -15px;
-				color: #777777;
-				font-family: "Roboto Slab";
+				color: $color-2;
+				font-family: $font-3;
 				font-size: 14px;
 				font-weight: 400;
-				// Text style for "P, roin ia"
 				letter-spacing: -0.35px;
 			}
 		}
@@ -358,11 +381,11 @@ body {
 		.last-photo {
 			position: relative;
   			text-align: center;
-			background-color: #fed136;
+			background-color: $color-1;
 			border-radius: 50%;
 			width: 168px;
 			height: 168px;
-			border: 7px solid #f1f1f1;
+			border: 7px solid $color-8;
 
 			p {
 				position: absolute;
@@ -370,11 +393,10 @@ body {
 				left: 50%;
 				transform: translate(-50%, -50%);
 				text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
-				color: #ffffff;
+				color: $color-4;
 				font-family: $font-1;
 				font-size: 18px;
-				font-weight: 700;
-				text-transform: uppercase;
+				@include font700;
 				letter-spacing: -0.45px;
 			}
 		}
@@ -394,22 +416,19 @@ body {
 	flex-direction: row;
 
 	h2 {
-		color: #222222;
-		font-family: Montserrat;
+		color: $color-3;
+		font-family: $font-1;
 		font-size: 40px;
-		font-weight: 700;
-		text-transform: uppercase;
+		@include font700;
 		letter-spacing: -2px;
 		margin-bottom: 23px;
 	}
 
 	p {
 		color: #777777;
-		font-family: "Droid Serif";
-		font-size: 16px;
-		font-style: italic;
+		font-family: $font-2;
 		margin-bottom: 83px;
-
+		@extend %font16;
 	}
 
 	.team-container {
@@ -420,16 +439,16 @@ body {
 			flex-direction: column;
 
 			.name {
-				color: #222222;
-				font-family: Montserrat;
+				color: $color-3;
+				font-family: $font-1;
 				font-size: 16px;
 				font-weight: 700;
 				margin-top: -10px;
 			}
 
 			.position {
-				color: #777777;
-				font-family: "Roboto Slab";
+				color: $color-4;
+				font-family: $font-3;
 				font-size: 14px;
 				letter-spacing: -0.35px;
 				margin-top: -75px;
@@ -438,7 +457,6 @@ body {
 			.team-photo {
 				margin: 25px;
 				border-radius: 50%;
-			
 				width: 221px;
 				height: 221px;
 			}
@@ -448,7 +466,7 @@ body {
 				margin-top: -65px;
 				
 				i {
-					border: 3px solid #222222;
+					border: 3px solid $color-3;
 					border-radius: 50%;
 					height: 41px;
 					width: 41px;
@@ -460,11 +478,13 @@ body {
 
 		.team-description {
 			text-align: center;
-			margin-top: 50px;
-			margin-left: 320px;
-			margin-right: 335px;
-			color: #777777;
-			font-family: "Roboto Slab";
+			margin : {
+				top: 50px;
+				left: 320px;
+				right: 335px;
+			}
+			color: $color-2;
+			font-family: $font-3;
 			font-size: 16px;
 			font-weight: 400;
 			letter-spacing: -0.4px;
@@ -474,8 +494,10 @@ body {
 
 .contact-us {
 	margin-top: 90px;
-	max-width: 1424px;
-	max-height: 742px;
+	max : {
+		width: 1424px;
+		height: 742px;
+	}
 
 	.logo {
 		justify-content: center;
@@ -496,23 +518,25 @@ body {
 			height: 676px;
 
 			h2 {
-				color: #ffffff;
-				font-family: Montserrat;
-				font-size: 40px;
-				font-weight: 700;
-				text-transform: uppercase;
+				color: $color-4;
+				font : {
+					family: $font-1;
+					size: 40px; 
+				}
+				@include font700;
 				letter-spacing: -1px;
 				margin-top: 110px;
 			}
 
 			p {
-				color: #777777;
-				font-family: "Droid Serif";
-				font-size: 16px;
-				font-style: italic;
-				margin-top: -25px;
-				margin-bottom: 76px;
-			}
+				color: $color-2;
+				font-family: $font-3;
+				@extend %font16;
+				margin : {
+					top: -25px;
+					bottom: 76px;
+				}
+ 			}
 
 			.myForm {
 				justify-content: center;
@@ -526,14 +550,14 @@ body {
 					textarea {
 				   		width: 455px;
 				   		height: 210px;
-				   		border: 1px solid #cccccc;
+				   		border: 1px solid $color-9;
 				    	border-radius: 2px;
 						
 					}
 					textarea::placeholder {
 						padding: 15px;
-						color: #bbbbbb;
-						font-family: Montserrat;
+						color: $color-10;
+						font-family: $font-1;
 						font-size: 14px;
 						text-transform: uppercase;
 						letter-spacing: -0.35px;
@@ -548,15 +572,15 @@ body {
 				    width: 455px;
 				    height: 50px;
 				    margin-bottom: 30px;
-				    border: 1px solid #cccccc;
+				    border: 1px solid $color-9;
 				    border-radius: 2px;
 				    flex: 1;
 				}
 
 				input::placeholder {
 					padding: 20px;
-					color: #bbbbbb;
-					font-family: Montserrat;
+					color: $color-10;
+					font-family: $font-1;
 					font-size: 14px;
 					text-transform: uppercase;
 					letter-spacing: -0.35px;
@@ -565,7 +589,7 @@ body {
 		}
 
 		.sendMessage {
-				background-color: #fed136;
+				background-color: $color-1;
 				font-family: $font-1;
 				border: none;
 				width: 240px;
@@ -588,8 +612,8 @@ footer{
 		.copyright {
 			margin-top: 80px;
 			width: 355px;
-			color: #555555;
-			font-family: Montserrat;
+			color: $color-11;
+			font-family: $font-1 ;
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 22px;
@@ -602,14 +626,14 @@ footer{
 			margin-right:  9px;
 
 			i {
-					border: 3px solid #222222;
+					border: 3px solid $color-3;
 					border-radius: 50%;
 					height: 40px;
 					width: 40px;
 					text-align: center;
 					line-height: 40px;
-					color: #fff;
-					background-color: #222222;
+					color: $color-4;
+					background-color: $color-3;
 					margin-right:  9px;
 			}
 		}
