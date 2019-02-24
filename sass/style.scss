@@ -94,6 +94,7 @@ body {
 		border-radius: 5px;
 		margin-top: -15px;
 		text-transform: uppercase;
+
 	}
 }	
 
@@ -470,5 +471,110 @@ body {
 	}	
 }
 
+.contact-us {
+	margin-top: 90px;
+	max-width: 1424px;
+	max-height: 742px;
+	.logo {
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-bottom: 21px;
 
+		img {
+			margin : 20px;
+		}
+	}
 
+	.contact-form {
+
+		.form-background {
+			background: url("../images/p.jpg");
+			position: relative;
+			width: 1402px;
+			height: 676px;
+
+			h2 {
+				color: #ffffff;
+				font-family: Montserrat;
+				font-size: 40px;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: -1px;
+				margin-top: 110px;
+			}
+
+			p {
+				color: #777777;
+				font-family: "Droid Serif";
+				font-size: 16px;
+				font-style: italic;
+				margin-top: -25px;
+				margin-bottom: 76px;
+			}
+
+			.myForm {
+				justify-content: center;
+				flex-wrap: wrap;
+
+				.message {
+	    			display: flex;
+	    			flex-direction: column;
+	  				padding-left: 15px;
+					
+					textarea {
+				   		width: 455px;
+				   		height: 210px;
+				   		border: 1px solid #cccccc;
+				    	border-radius: 2px;
+						
+					}
+					textarea::placeholder {
+						padding: 15px;
+						color: #bbbbbb;
+						font-family: Montserrat;
+						font-size: 14px;
+						text-transform: uppercase;
+						letter-spacing: -0.35px;
+					}
+				}
+
+			.contact {
+				flex-direction: column;
+				padding-right: 15px; 
+					
+				input {
+				    width: 455px;
+				    height: 50px;
+				    margin-bottom: 30px;
+				    border: 1px solid #cccccc;
+				    border-radius: 2px;
+				    flex: 1;
+				}
+
+				input::placeholder {
+					padding: 20px;
+					color: #bbbbbb;
+					font-family: Montserrat;
+					font-size: 14px;
+					text-transform: uppercase;
+					letter-spacing: -0.35px;
+				}
+			}
+		}
+
+		.sendMessage {
+				background-color: #fed136;
+				font-family: $font-1;
+				border: none;
+				width: 240px;
+				height: 65px;
+				font-size: 18px;
+				border-radius: 5px;
+				margin-bottom: 160px;
+				text-transform: uppercase;
+				color: white;
+			}	
+		}
+		
+	}
+}
