@@ -386,8 +386,6 @@ body {
 
 .team {
   margin-top: 120px;
-  -ms-flex-direction: row;
-      flex-direction: row;
 }
 
 .team h2 {
