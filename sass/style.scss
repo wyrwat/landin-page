@@ -466,5 +466,61 @@ body {
 	}	
 }
 
+.contact-us {
+	margin-top: 90px;
+	max-width: 1424px;
+	max-height: 742px;
+	.logo {
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-bottom: 21px;
 
+		img {
+			margin : 20px;
+		}
+	}
 
+	.contact-us {
+	margin-top: 90px;
+	max-width: 1424px;
+	max-height: 742px;
+	.logo {
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-bottom: 21px;
+
+		img {
+			margin : 20px;
+		}
+	}
+
+	.contact-form {
+		.form-background {
+			background: url("../images/p.jpg");
+			position: relative;
+			width: 1402px;
+			height: 676px;
+
+			h2 {
+				color: #ffffff;
+				font-family: Montserrat;
+				font-size: 40px;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: -1px;
+				margin-top: 110px;
+			}
+
+			p {
+				color: #777777;
+				font-family: "Droid Serif";
+				font-size: 16px;
+				font-style: italic;
+				margin-top: 23px;
+			}
+		}
+
+		
+		
+	}
+}
