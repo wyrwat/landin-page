@@ -13,8 +13,6 @@ body {
 
 .container {
 	display: flex;
-	margin: 0 auto;
-
 }
 
 .nav-container {
@@ -115,10 +113,8 @@ body {
 
 .services {
     text-align: center;
-
-    
-
-    	.service {
+		
+		.service {
 	    	margin-top: 120px;
 			font-family: $font-1;
 			font-size: 40px;
@@ -135,12 +131,12 @@ body {
 			font-style: italic;
     	}
 
-    .row{
-		
+    	.row {
 		flex-direction: row;
 		justify-content: space-around;
 		position: relative;
 		right: 20px;
+
 			.align-left {
 				position: relative;
 				left: 90px;
@@ -188,17 +184,78 @@ body {
 						letter-spacing: -0.35px;
 						margin-bottom: 118px;
 					}
-				
+				}
 			}
+		}
+	}
 
-			
+.portfolio {
+	text-align: center;
+	background-color: #f7f7f7;
+	
+		.bottom {
+			padding-bottom: 120px;
+		}
 
+		h2 {
+			color: #222222;
+			font-family: $font-1;
+			font-size: 40px;
+			font-weight: 700;
+			line-height: 75px;
+			text-transform: uppercase;
+			letter-spacing: -1px;
+			padding-top: 120px;
+		}
 
+		.porfolio-description{
+			color: #777777;
+			font-family: "Droid Serif";
+			font-size: 16px;
+			font-style: italic;
+		}
+
+		.gallery-container {
+			flex-wrap: wrap;
+			justify-content: center;
+
+			.photo-container {
+				flex-direction: column;
+				    			
+    			.photo {
+    				margin: 37px;
+    			}
+				.info {
+
+					width: 291px;
+					height: 93px;
+					background-color: #ffffff;
+					flex-direction: column;
+					justify-content: center;
+					margin-left: 37px;
+					margin-top: -37px;
+
+	    			h3 {
+	
+						color: #333333;
+						font-family: $font-1;
+						font-size: 18px;
+						font-weight: 700;
+						letter-spacing: -0.45px;
+	    			}
+					
+					p {
+						margin-top: -4px;
+						color: #737373;
+						font-family: "Droid Serif";
+						font-size: 14px;
+						font-style: italic;
+					}
+				}	
 			}
-
-
 		}
 }
+
 
 
 

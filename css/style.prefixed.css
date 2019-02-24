@@ -9,7 +9,6 @@ body {
 .container {
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
 }
 
 .nav-container {
@@ -177,5 +176,76 @@ body {
   font-weight: 400;
   letter-spacing: -0.35px;
   margin-bottom: 118px;
+}
+
+.portfolio {
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.portfolio .bottom {
+  padding-bottom: 120px;
+}
+
+.portfolio h2 {
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 120px;
+}
+
+.portfolio .porfolio-description {
+  color: #777777;
+  font-family: "Droid Serif";
+  font-size: 16px;
+  font-style: italic;
+}
+
+.portfolio .gallery-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.portfolio .gallery-container .photo-container {
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.portfolio .gallery-container .photo-container .photo {
+  margin: 37px;
+}
+
+.portfolio .gallery-container .photo-container .info {
+  width: 291px;
+  height: 93px;
+  background-color: #ffffff;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-left: 37px;
+  margin-top: -37px;
+}
+
+.portfolio .gallery-container .photo-container .info h3 {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+}
+
+.portfolio .gallery-container .photo-container .info p {
+  margin-top: -4px;
+  color: #737373;
+  font-family: "Droid Serif";
+  font-size: 14px;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
