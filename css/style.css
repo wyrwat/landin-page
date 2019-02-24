@@ -1,3 +1,18 @@
+.portfolio .gallery-container .photo-container .info p {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.services .text, .portfolio .porfolio-description, .about-us p, .team p, .contact-us .contact-form .form-background p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.nav-container .nav-image .header h2 {
+  font-size: 40px;
+  font-style: italic;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,6 +26,7 @@ body {
 }
 
 .nav-container {
+  flex-wrap: wrap;
   max-width: 1424px;
   max-height: 742px;
 }
@@ -39,13 +55,13 @@ body {
 }
 
 .nav-container .nav-image .link-elements li {
+  font-weight: 400;
+  text-transform: uppercase;
   list-style-type: none;
   font-size: 14px;
   padding-right: 40px;
   font-family: "Montserrat";
-  font-weight: 400;
   line-height: 41px;
-  text-transform: uppercase;
 }
 
 .nav-container .nav-image .link-elements li:first-child {
@@ -70,8 +86,6 @@ body {
 .nav-container .nav-image .header h2 {
   color: #fff;
   margin-top: 212px;
-  font-size: 40px;
-  font-style: italic;
   letter-spacing: -1px;
 }
 
@@ -113,13 +127,10 @@ body {
   margin-top: -19px;
   color: #777777;
   font-family: "Droid-Serif";
-  font-size: 16px;
-  font-style: italic;
 }
 
 .services .row {
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-around;
   position: relative;
   right: 20px;
@@ -132,7 +143,7 @@ body {
 				position: relative;
 				right: 90px;
 			}
-*/
+			*/
 }
 
 .services .row li {
@@ -184,12 +195,12 @@ body {
 }
 
 .portfolio h2 {
+  font-weight: 700;
+  text-transform: uppercase;
   color: #222222;
   font-family: "Montserrat";
   font-size: 40px;
-  font-weight: 700;
   line-height: 75px;
-  text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 120px;
 }
@@ -197,8 +208,6 @@ body {
 .portfolio .porfolio-description {
   color: #777777;
   font-family: "Droid-Serif";
-  font-size: 16px;
-  font-style: italic;
 }
 
 .portfolio .gallery-container {
@@ -236,8 +245,6 @@ body {
   margin-top: -4px;
   color: #737373;
   font-family: "Droid-Serif";
-  font-size: 14px;
-  font-style: italic;
 }
 
 .about-us {
@@ -245,20 +252,18 @@ body {
 }
 
 .about-us h2 {
+  font-weight: 700;
+  text-transform: uppercase;
   color: #222222;
   font-family: "Montserrat";
   font-size: 40px;
-  font-weight: 700;
   line-height: 75px;
-  text-transform: uppercase;
   letter-spacing: -1px;
 }
 
 .about-us p {
   color: #777777;
   font-family: "Droid-Serif";
-  font-size: 16px;
-  font-style: italic;
 }
 
 .about-us .history-container {
@@ -286,10 +291,9 @@ body {
   color: #222222;
   font-family: "Montserrat";
   font-size: 18px;
+  letter-spacing: -0.45px;
   font-weight: 700;
-  letter-spacing: -0.45px;
   text-transform: uppercase;
-  letter-spacing: -0.45px;
 }
 
 .about-us .history-container .history h4 {
@@ -318,10 +322,10 @@ body {
   color: #222222;
   font-family: "Montserrat";
   font-size: 18px;
+  letter-spacing: -0.45px;
+  letter-spacing: -0.45px;
   font-weight: 700;
-  letter-spacing: -0.45px;
   text-transform: uppercase;
-  letter-spacing: -0.45px;
 }
 
 .about-us .history-container .history-2 h4 {
@@ -390,8 +394,6 @@ body {
 .team p {
   color: #777777;
   font-family: "Droid-Serif";
-  font-size: 16px;
-  font-style: italic;
   margin-bottom: 83px;
 }
 
@@ -488,8 +490,6 @@ body {
 .contact-us .contact-form .form-background p {
   color: #777777;
   font-family: "Roboto Slab";
-  font-size: 16px;
-  font-style: italic;
   margin-top: -25px;
   margin-bottom: 76px;
 }

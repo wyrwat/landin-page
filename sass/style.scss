@@ -16,13 +16,13 @@ $color-10: #bbbbbb;
 $color-11: #555555;
 
 @mixin font400($font-weight: 400, $text-transform: uppercase) {
-    font-size: $font-size;
     font-weight: $font-weight;
+    text-transform: $text-transform;
 } 
 
 @mixin font700($font-weight: 700, $text-transform: uppercase) {
-    font-size: $font-size;
     font-weight: $font-weight;
+    text-transform: $text-transform;
 } 
 
 %font14 {
