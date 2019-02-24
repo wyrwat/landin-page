@@ -21,10 +21,8 @@ body {
 }
 
 .link-elements {
-
 	margin-top: 55px;
 	margin-left: 249px;
-
 }
 
 .link-elements li {
@@ -65,12 +63,9 @@ body {
 	text-align: center;
 
 	h2 {
-		margin-top: 190px;
 		color: $font-color-1;
-
 		margin-top: 212px;
 		font-size: 40px;
-
 		font-style: italic;
 		letter-spacing: -1px;
 
@@ -93,7 +88,7 @@ body {
 		height: 65px;
 		font-size: 18px;
 		border-radius: 5px;
-		margin-top: -15px;
+		margin-bottom: 160px;
 		text-transform: uppercase;
 
 	}
@@ -110,7 +105,7 @@ body {
     background-size: cover;
 	width: 1403px;
 	height: 742px;
-	//margin-top: 42px;
+	margin-top: 42px;
 }
 
 .services {
