@@ -95,7 +95,6 @@ body {
   background-size: cover;
   width: 1403px;
   height: 742px;
-  margin-top: 42px;
 }
 
 .services {
@@ -120,22 +119,24 @@ body {
 }
 
 .services .row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
   right: 20px;
-}
+  /*.align-left {
+				position: relative;
+				left: 90px;
+			}
 
-.services .row .align-left {
-  position: relative;
-  left: 90px;
-}
-
-.services .row .align-right {
-  position: relative;
-  right: 90px;
+			.align-right {
+				position: relative;
+				right: 90px;
+			}
+*/
 }
 
 .services .row li {
