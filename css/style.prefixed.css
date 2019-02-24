@@ -1,0 +1,102 @@
+body {
+  margin: 0 auto;
+}
+
+.container {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-container {
+  width: 1424px;
+  height: 729px;
+  margin: 0 auto;
+}
+
+.link-elements {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 73px;
+  margin-left: 190px;
+}
+
+.link-elements li {
+  list-style-type: none;
+  font-size: 14px;
+  padding-right: 40px;
+  margin-top: 42px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+
+.link-elements li:first-child {
+  margin-right: auto;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 41px;
+}
+
+.link-elements li:last-child {
+  padding-right: 242px;
+}
+
+.link-elements a {
+  text-decoration: none;
+}
+
+.menu {
+  color: #fff;
+}
+
+.golden {
+  color: #fed136;
+  font-family: Wisdom-Script;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  color: #fff;
+  margin-top: 30px;
+  font-family: Montserrat;
+  font-size: 75px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -1.88px;
+}
+
+.header h2 {
+  margin-top: 190px;
+  color: #fff;
+  font-size: 35px;
+  font-style: italic;
+  letter-spacing: -1px;
+}
+
+.header .tellMeMore {
+  background-color: #fed136;
+  font-family: Montserrat;
+  border: none;
+  width: 240px;
+  height: 65px;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 5px;
+  margin-top: -15px;
+  text-transform: uppercase;
+}
+
+.nav-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/860379/pexels-photo-860379.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1400px;
+  height: 700px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.prefixed.css.map */
