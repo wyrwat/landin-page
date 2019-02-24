@@ -364,7 +364,7 @@ body {
 			width: 168px;
 			height: 168px;
 			border: 7px solid #f1f1f1;
-			
+
 			p {
 				position: absolute;
 				top: 50%;
@@ -376,7 +376,6 @@ body {
 				font-size: 18px;
 				font-weight: 700;
 				text-transform: uppercase;
-				// Text style for "O, ur , St"
 				letter-spacing: -0.45px;
 			}
 		}
@@ -389,7 +388,86 @@ body {
   	width: 3px;
     height: 94px;
     background-color: red;
+}
 
+.team {
+	margin-top: 120px;
+	flex-direction: row;
+
+	h2 {
+		color: #222222;
+		font-family: Montserrat;
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: -2px;
+		margin-bottom: 23px;
+	}
+
+	p {
+		color: #777777;
+		font-family: "Droid Serif";
+		font-size: 16px;
+		font-style: italic;
+		margin-bottom: 83px;
+
+	}
+
+	.team-container {
+		justify-content: center;
+		flex-wrap: wrap;
+
+		.team-photo-container {
+			flex-direction: column;
+
+			.name {
+				color: #222222;
+				font-family: Montserrat;
+				font-size: 16px;
+				font-weight: 700;
+				margin-top: -10px;
+			}
+
+			.position {
+				color: #777777;
+				font-family: "Roboto Slab";
+				font-size: 14px;
+				letter-spacing: -0.35px;
+				margin-top: -75px;
+			}
+
+			.team-photo {
+				margin: 25px;
+				border-radius: 50%;
+			}
+
+			.team-icon {
+				flex-direction: row;
+				margin-top: -65px;
+				
+				i {
+					border: 3px solid #222222;
+					border-radius: 50%;
+					height: 41px;
+					width: 41px;
+					text-align: center;
+					line-height: 41px;
+				}
+			}
+		}
+
+		.team-description {
+			text-align: center;
+			margin-top: 50px;
+			margin-left: 320px;
+			margin-right: 335px;
+			color: #777777;
+			font-family: "Roboto Slab";
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: -0.4px;
+		}
+	}	
 }
 
 
