@@ -556,4 +556,12 @@ body {
   color: white;
 }
 
+.footer-container h4 {
+  margin-top: 90px;
+}
+
+.footer-container .icon {
+  justify-content: center;
+}
+
 /*# sourceMappingURL=style.css.map */

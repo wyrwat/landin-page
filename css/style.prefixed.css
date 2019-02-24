@@ -598,4 +598,13 @@ body {
   text-transform: uppercase;
   color: white;
 }
+
+.footer-container h4 {
+  margin-top: 90px;
+}
+
+.footer-container .icon {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
 /*# sourceMappingURL=style.prefixed.css.map */
