@@ -88,7 +88,7 @@ body {
 }
 
 .nav-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/860379/pexels-photo-860379.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/Background_Image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
