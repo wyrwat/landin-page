@@ -439,7 +439,7 @@ body {
 			}
 
 			.team-icon {
-				flex-direction: row;
+				
 				margin-top: -65px;
 				
 				i {
@@ -471,6 +471,7 @@ body {
 	margin-top: 90px;
 	max-width: 1424px;
 	max-height: 742px;
+
 	.logo {
 		justify-content: center;
 		flex-wrap: wrap;
@@ -575,13 +576,37 @@ body {
 	}
 }
 
-.footer-container {
-
-	h4 {
-		margin-top: 90px;
-	}
-
-	.icon {
+footer{
+	.footer-container {
 		justify-content: center;
+	
+		.copyright {
+			margin-top: 80px;
+			width: 355px;
+			color: #555555;
+			font-family: Montserrat;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 22px;
+			letter-spacing: -0.35px;
+			text-align: left;
+		}
+
+		.icon {
+			margin-top: 80px;
+			margin-right:  9px;
+
+			i {
+					border: 3px solid #222222;
+					border-radius: 50%;
+					height: 40px;
+					width: 40px;
+					text-align: center;
+					line-height: 40px;
+					color: #fff;
+					background-color: #222222;
+					margin-right:  9px;
+			}
+		}
 	}
 }
