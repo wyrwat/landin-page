@@ -110,6 +110,7 @@
   border-radius: 5px;
   margin-bottom: 160px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .services {
@@ -153,9 +154,9 @@
 }
 
 .services .row li .icon {
-  font-size: 40px;
+  font-size: 35px;
   color: #fed136;
-  border: 1px solid #fed136;
+  border: 3px solid #fed136;
   line-height: 67px;
   width: 67px;
   text-align: center;
@@ -381,6 +382,7 @@
 .team {
   margin-top: 120px;
   flex-direction: row;
+  text-align: center;
 }
 
 .team h2 {
@@ -435,13 +437,40 @@
   margin-top: -65px;
 }
 
-.team .team-container .team-photo-container .team-icon i {
+.team .team-container .team-photo-container .team-icon .fa-facebook-f,
+.team .team-container .team-photo-container .team-icon .fa-twitter,
+.team .team-container .team-photo-container .team-icon .fa-pinterest-p,
+.team .team-container .team-photo-container .team-icon .fa-google-plus-g {
   border: 3px solid #222222;
   border-radius: 50%;
   height: 41px;
   width: 41px;
-  text-align: center;
-  line-height: 41px;
+  line-height: 39px;
+  cursor: pointer;
+}
+
+.team .team-container .team-photo-container .team-icon .fa-facebook-f:hover {
+  background-color: #3B5998;
+  color: #FFF;
+  border: 3px solid #3B5998;
+}
+
+.team .team-container .team-photo-container .team-icon .fa-twitter:hover {
+  background-color: #00aced;
+  color: #FFF;
+  border: 3px solid #00aced;
+}
+
+.team .team-container .team-photo-container .team-icon .fa-pinterest-p:hover {
+  background-color: #cb2028;
+  color: #FFF;
+  border: 3px solid #cb2028;
+}
+
+.team .team-container .team-photo-container .team-icon .fa-google-plus-g:hover {
+  background-color: #d95232;
+  color: #FFF;
+  border: 3px solid #d95232;
 }
 
 .team .team-container .team-description {
@@ -566,6 +595,7 @@
   margin-bottom: 160px;
   text-transform: uppercase;
   color: white;
+  cursor: pointer;
 }
 
 footer .footer-container {
@@ -590,7 +620,6 @@ footer .footer-container .icon {
 }
 
 footer .footer-container .icon i {
-  border: 3px solid #222222;
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -599,6 +628,30 @@ footer .footer-container .icon i {
   color: #ffffff;
   background-color: #222222;
   margin-right: 9px;
+}
+
+footer .footer-container .icon .fa-facebook-f:hover {
+  background-color: #3B5998;
+  color: #FFF;
+  border: 0;
+}
+
+footer .footer-container .icon .fa-twitter:hover {
+  background-color: #00aced;
+  color: #FFF;
+  border: none;
+}
+
+footer .footer-container .icon .fa-pinterest-p:hover {
+  background-color: #cb2028;
+  color: #FFF;
+  border: none;
+}
+
+footer .footer-container .icon .fa-google-plus-g:hover {
+  background-color: #d95232;
+  color: #FFF;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

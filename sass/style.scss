@@ -44,8 +44,6 @@ $color-11: #555555;
     box-sizing: border-box;
 }
 
-
-
 .container {
 	display: flex;
 }
@@ -144,6 +142,7 @@ $color-11: #555555;
 				border-radius: 5px;
 				margin-bottom: 160px;
 				text-transform: uppercase;
+				cursor: pointer;
 			}
 		}
 	}
@@ -188,9 +187,9 @@ $color-11: #555555;
 				list-style-type: none;
 
 				.icon  {
-					font-size: 40px;
+					font-size: 35px;
 					color: $color-1;
-					border: 1px solid $color-1;
+					border: 3px solid $color-1;
 					line-height: 67px;
 					width: 67px;
 					text-align: center;
@@ -419,7 +418,7 @@ $color-11: #555555;
 .team {
 	margin-top: 120px;
 	flex-direction: row;
-
+	text-align: center;
 	h2 {
 		color: $color-3;
 		font-family: $font-1;
@@ -470,13 +469,42 @@ $color-11: #555555;
 				
 				margin-top: -65px;
 				
-				i {
+				 .fa-facebook-f,
+				 .fa-twitter,
+				 .fa-pinterest-p,
+				 .fa-google-plus-g{
 					border: 3px solid $color-3;
 					border-radius: 50%;
 					height: 41px;
 					width: 41px;
-					text-align: center;
-					line-height: 41px;
+					//text-align: center;
+					line-height: 39px;
+					cursor: pointer;
+				}
+
+				.fa-facebook-f:hover {
+				    background-color: #3B5998;
+				    color: #FFF;
+				    border: 3px solid #3B5998;
+
+				}
+
+				.fa-twitter:hover {
+					background-color: #00aced;
+					color: #FFF;
+				    border: 3px solid #00aced;
+				}
+
+				.fa-pinterest-p:hover {
+					background-color: #cb2028;
+					color: #FFF;
+				    border: 3px solid #cb2028;
+				}
+
+				.fa-google-plus-g:hover {
+					background-color: #d95232;
+					color: #FFF;
+				    border: 3px solid #d95232;
 				}
 			}
 		}
@@ -501,8 +529,7 @@ $color-11: #555555;
 
 .contact-us {
 	margin-top: 90px;
-		
-		max-width: 100%;
+	max-width: 100%;
 	
 
 	.logo {
@@ -609,6 +636,7 @@ $color-11: #555555;
 				margin-bottom: 160px;
 				text-transform: uppercase;
 				color: white;
+				cursor: pointer;
 			}	
 		}
 		
@@ -637,7 +665,6 @@ footer{
 			margin-right:  9px;
 
 			i {
-					border: 3px solid $color-3;
 					border-radius: 50%;
 					height: 40px;
 					width: 40px;
@@ -646,7 +673,32 @@ footer{
 					color: $color-4;
 					background-color: $color-3;
 					margin-right:  9px;
-			}
+				}
+
+			.fa-facebook-f:hover {
+				    background-color: #3B5998;
+				    color: #FFF;
+				    border: 0;
+
+				}
+
+				.fa-twitter:hover {
+					background-color: #00aced;
+					color: #FFF;
+				    border: none;
+				}
+
+				.fa-pinterest-p:hover {
+					background-color: #cb2028;
+					color: #FFF;
+				    border: none;
+				}
+
+				.fa-google-plus-g:hover {
+					background-color: #d95232;
+					color: #FFF;
+				    border: none;
+				}	
 		}
 	}
 }
