@@ -17,20 +17,17 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0 auto;
-}
-
 .container {
   display: -ms-flexbox;
   display: flex;
 }
 
 .nav-container {
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 1424px;
-  max-height: 742px;
+  max-width: 100%;
 }
 
 .nav-container .nav-image {
@@ -40,11 +37,16 @@ body {
   background-size: cover;
   width: 1403px;
   height: 742px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .nav-container .nav-image .link-elements {
+  -ms-flex-pack: center;
+      justify-content: center;
   margin-top: 55px;
-  margin-left: 249px;
+  max-width: 660px;
+  margin-left: 130px;
 }
 
 .nav-container .nav-image .link-elements .menu {
@@ -74,7 +76,7 @@ body {
 }
 
 .nav-container .nav-image .link-elements li:last-child {
-  padding-right: 242px;
+  margin-left: auto;
 }
 
 .nav-container .nav-image .link-elements a {
@@ -82,12 +84,16 @@ body {
 }
 
 .nav-container .nav-image .header {
+  -ms-flex-direction: column;
+      flex-direction: column;
   text-align: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .nav-container .nav-image .header h2 {
   color: #fff;
-  margin-top: 212px;
+  margin-top: 192px;
   letter-spacing: -1px;
 }
 
@@ -97,7 +103,7 @@ body {
   font-size: 75px;
   text-transform: uppercase;
   letter-spacing: -1.88px;
-  margin-top: 52px;
+  margin-top: 2px;
 }
 
 .nav-container .nav-image .header .tellMeMore {
@@ -461,9 +467,14 @@ body {
 
 .team .team-container .team-description {
   text-align: center;
-  margin-top: 50px;
-  margin-left: 320px;
-  margin-right: 335px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  max-width: 660px;
+  /*margin : {
+				top: 50px;
+				left: 320px;
+				right: 335px;
+			}*/
   color: #777777;
   font-family: "Roboto Slab";
   font-size: 16px;
@@ -473,8 +484,7 @@ body {
 
 .contact-us {
   margin-top: 90px;
-  max-width: 1424px;
-  max-height: 742px;
+  max-width: 100%;
 }
 
 .contact-us .logo {
@@ -489,11 +499,14 @@ body {
   margin: 20px;
 }
 
+.contact-us .contact-form {
+  max-width: 100%;
+}
+
 .contact-us .contact-form .form-background {
   background: url("../images/p.jpg");
   position: relative;
-  width: 1402px;
-  height: 676px;
+  width: 100%;
 }
 
 .contact-us .contact-form .form-background h2 {
@@ -514,23 +527,22 @@ body {
 }
 
 .contact-us .contact-form .form-background .myForm {
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .contact-us .contact-form .form-background .myForm .message {
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  padding-left: 15px;
+  max-width: 100%;
 }
 
 .contact-us .contact-form .form-background .myForm .message textarea {
   width: 455px;
   height: 210px;
+  max-width: 100%;
   border: 1px solid #cccccc;
   border-radius: 2px;
 }
@@ -556,12 +568,13 @@ body {
 .contact-us .contact-form .form-background .myForm .contact {
   -ms-flex-direction: column;
       flex-direction: column;
-  padding-right: 15px;
+  max-width: 100%;
 }
 
 .contact-us .contact-form .form-background .myForm .contact input {
   width: 455px;
   height: 50px;
+  max-width: 100%;
   margin-bottom: 30px;
   border: 1px solid #cccccc;
   border-radius: 2px;
@@ -595,14 +608,17 @@ body {
   height: 65px;
   font-size: 18px;
   border-radius: 5px;
+  margin-top: 30px;
   margin-bottom: 160px;
   text-transform: uppercase;
   color: white;
 }
 
 footer .footer-container {
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 footer .footer-container .copyright {
@@ -612,7 +628,6 @@ footer .footer-container .copyright {
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 400;
-  line-height: 22px;
   letter-spacing: -0.35px;
   text-align: left;
 }

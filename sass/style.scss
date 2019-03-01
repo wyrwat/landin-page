@@ -44,18 +44,16 @@ $color-11: #555555;
     box-sizing: border-box;
 }
 
-body {
-	margin: 0 auto;
-}
+
 
 .container {
 	display: flex;
 }
 
 .nav-container {
+	justify-content: center;
 	flex-wrap: wrap;
-	max-width: 1424px;
-	max-height: 742px;
+	max-width: 100%;
 
 	.nav-image {
 	    background:
@@ -68,11 +66,16 @@ body {
 	    background-size: cover;
 		width: 1403px;
 		height: 742px;
-		
-		.link-elements {
-			margin-top: 55px;
-			margin-left: 249px;
+		max-width: 100%;
+		max-height: 100%;
 
+		.link-elements {
+			justify-content: center;
+			margin-top: 55px;
+			max-width: 660px;
+			margin-left: 130px;
+			
+			
 			.menu {
 				color: $font-color-1;
 			
@@ -80,7 +83,7 @@ body {
 
 			.golden {
 				color: $color-1;
-				font-family: $font-logo;
+					font-family: $font-logo;
 			}
 
 			li {
@@ -100,7 +103,7 @@ body {
 			}
 
 			li:last-child {
-				padding-right: 242px;
+				margin-left: auto;
 			}
 
 			a {
@@ -109,12 +112,15 @@ body {
 		}
 
 		.header {
-			text-align: center;
+			flex-direction: column;
+			text-align: center;	
+			justify-content: center;
+			
 
 			h2 {
 				@extend %font40;
 				color: $font-color-1;
-				margin-top: 212px;
+				margin-top: 192px;
 				letter-spacing: -1px;
 
 			}
@@ -125,7 +131,7 @@ body {
 				font-size: 75px;
 				text-transform: uppercase;
 				letter-spacing: -1.88px;
-				margin-top: 52px;
+				margin-top: 2px;
 			}
 			
 			.tellMeMore {
@@ -138,7 +144,6 @@ body {
 				border-radius: 5px;
 				margin-bottom: 160px;
 				text-transform: uppercase;
-
 			}
 		}
 	}
@@ -478,11 +483,13 @@ body {
 
 		.team-description {
 			text-align: center;
-			margin : {
+			justify-content: center;
+			max-width: 660px;
+			/*margin : {
 				top: 50px;
 				left: 320px;
 				right: 335px;
-			}
+			}*/
 			color: $color-2;
 			font-family: $font-3;
 			font-size: 16px;
@@ -494,10 +501,9 @@ body {
 
 .contact-us {
 	margin-top: 90px;
-	max : {
-		width: 1424px;
-		height: 742px;
-	}
+		
+		max-width: 100%;
+	
 
 	.logo {
 		justify-content: center;
@@ -510,12 +516,12 @@ body {
 	}
 
 	.contact-form {
-
+		max-width: 100%;
 		.form-background {
 			background: url("../images/p.jpg");
 			position: relative;
-			width: 1402px;
-			height: 676px;
+			width: 100%;
+			
 
 			h2 {
 				color: $color-4;
@@ -539,17 +545,18 @@ body {
  			}
 
 			.myForm {
-				justify-content: center;
+				justify-content: space-around;
 				flex-wrap: wrap;
 
 				.message {
-	    			display: flex;
+	    			
 	    			flex-direction: column;
-	  				padding-left: 15px;
-					
+	  				//padding-left: 15px;
+					max-width: 100%;
 					textarea {
 				   		width: 455px;
 				   		height: 210px;
+				   		max-width: 100%;
 				   		border: 1px solid $color-9;
 				    	border-radius: 2px;
 						
@@ -566,11 +573,12 @@ body {
 
 			.contact {
 				flex-direction: column;
-				padding-right: 15px; 
-					
+				//margin-right: 15px; 
+				max-width: 100%;	
 				input {
 				    width: 455px;
 				    height: 50px;
+				    max-width: 100%;
 				    margin-bottom: 30px;
 				    border: 1px solid $color-9;
 				    border-radius: 2px;
@@ -596,6 +604,7 @@ body {
 				height: 65px;
 				font-size: 18px;
 				border-radius: 5px;
+				margin-top: 30px;
 				margin-bottom: 160px;
 				text-transform: uppercase;
 				color: white;
@@ -607,8 +616,9 @@ body {
 
 footer{
 	.footer-container {
-		justify-content: center;
-	
+		justify-content: space-around;
+		flex-wrap: wrap;
+
 		.copyright {
 			margin-top: 80px;
 			width: 355px;
@@ -616,7 +626,7 @@ footer{
 			font-family: $font-1 ;
 			font-size: 14px;
 			font-weight: 400;
-			line-height: 22px;
+			//line-height: 22px;
 			letter-spacing: -0.35px;
 			text-align: left;
 		}
