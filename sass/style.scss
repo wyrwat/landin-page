@@ -517,11 +517,12 @@ $color-11: #555555;
 
 	.contact-form {
 		max-width: 100%;
+
 		.form-background {
 			background: url("../images/p.jpg");
 			position: relative;
 			width: 100%;
-			
+			text-align: center;
 
 			h2 {
 				color: $color-4;

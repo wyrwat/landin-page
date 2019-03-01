@@ -483,6 +483,7 @@
   background: url("../images/p.jpg");
   position: relative;
   width: 100%;
+  text-align: center;
 }
 
 .contact-us .contact-form .form-background h2 {
