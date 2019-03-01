@@ -179,13 +179,12 @@
 .services .row li .responsiveWeb p,
 .services .row li .webSecurity p {
   width: 274px;
-  height: 57px;
   color: #777777;
   font-family: "Roboto Slab";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.35px;
-  margin-bottom: 118px;
+  margin-bottom: -20px;
 }
 
 .portfolio {
@@ -224,6 +223,7 @@
 
 .portfolio .gallery-container .photo-container .photo {
   margin: 37px;
+  cursor: pointer;
 }
 
 .portfolio .gallery-container .photo-container .info {
@@ -601,21 +601,22 @@
 footer .footer-container {
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 footer .footer-container .copyright {
-  margin-top: 80px;
-  width: 355px;
   color: #555555;
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.35px;
-  text-align: left;
+}
+
+footer .footer-container .copyright-dummy {
+  width: 355px;
 }
 
 footer .footer-container .icon {
-  margin-top: 80px;
   margin-right: 9px;
 }
 
