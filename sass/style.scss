@@ -48,6 +48,10 @@ $color-11: #555555;
 	display: flex;
 }
 
+.active {
+	display: block;
+	}
+
 .nav-container {
 	justify-content: center;
 	flex-wrap: wrap;
@@ -66,23 +70,57 @@ $color-11: #555555;
 		height: 742px;
 		max-width: 100%;
 		max-height: 100%;
+		
+		.navbar-toggle {
+		    position: absolute;
+		    top: 10px;
+		    right: 20px;
+		    cursor: pointer; 
+		    color: rgba(255,255,255,0.8);
+		    font-size: 24px;
+		    
+		}
+		
+		.navbar-toggle:hover .fa-bars {
+			color: white;
+		}
+		
+		.fa-bars {
+			color: $color-1;
+			font-size: 26px;
+			margin-top: 55px;
+
+		}
+
+		.golden  {
+			font-size: 26px;
+			display: inline-block;
+			margin-top: 55px;
+			color: $color-1;
+			font-family: $font-logo;
+			text-decoration: none;
+			list-style-type: none;
+			margin-left: 80px;
+		}
+
+		.navMenu {
+			display: none;
+		}
+		
+		
 
 		.link-elements {
-			justify-content: center;
-			margin-top: 55px;
-			max-width: 660px;
-			margin-left: 130px;
-			
+
+			text-align: center;
+			justify-content: flex-end;
+			margin-top: 40px auto;
 			
 			.menu {
 				color: $font-color-1;
-			
-			}	
+				width: 480px;
+				max-width: 100%;
 
-			.golden {
-				color: $color-1;
-					font-family: $font-logo;
-			}
+			}	
 
 			li {
 				@include font400;
@@ -93,7 +131,7 @@ $color-11: #555555;
 				line-height: 41px;
 			}
 
-			li:first-child {
+			/*li:first-child {
 				margin-right: auto;
 		 		font-size: 26px;
 				font-weight: 400;
@@ -101,8 +139,8 @@ $color-11: #555555;
 			}
 
 			li:last-child {
-				margin-left: auto;
-			}
+				margin-right: 130px;
+			}*/
 
 			a {
 				text-decoration: none;
@@ -118,7 +156,7 @@ $color-11: #555555;
 			h2 {
 				@extend %font40;
 				color: $font-color-1;
-				margin-top: 192px;
+				margin-top: 230px;
 				letter-spacing: -1px;
 
 			}
@@ -219,7 +257,7 @@ $color-11: #555555;
 						font-size: 14px;
 						font-weight: 400;
 						letter-spacing: -0.35px;
-						margin-bottom: -20px;
+						margin-bottom: 50px;
 					}
 				}
 			}
@@ -411,10 +449,9 @@ $color-11: #555555;
 }
 
 .vl {
-	justify-content: center;
-  	width: 3px;
+	
     height: 94px;
-    background-color: red;
+    
 }
 
 .team {
@@ -660,10 +697,10 @@ footer{
 			font-size: 14px;
 			font-weight: 400;
 			letter-spacing: -0.35px;
-			//text-align: left;
+			//text-align: center;
 		}
 		.copyright-dummy {
-			width: 355px;
+			width: 255px;
 		}
 		.icon {
 			margin-right:  9px;
@@ -705,4 +742,57 @@ footer{
 				}	
 		}
 	}
+}
+
+
+ @media(min-width: 768px) and (max-width: 991px) {
+    .link-elements {
+    		display: flex;
+			text-align: center;
+			//justify-content: center;
+			margin-top: 55px;
+			
+			margin-left: 10px;
+			
+			
+			.menu {
+				color: $font-color-1;
+				width: 480px;
+				max-width: 100%;
+
+			}	
+
+			.golden {
+				color: $color-1;
+					font-family: $font-logo;
+			}
+
+			li {
+				@include font400;
+				list-style-type: none;
+				font-size: 14px;
+				padding-right: 40px;
+				font-family: $font-1;
+				line-height: 41px;
+			}
+
+			li:first-child {
+				margin-right: auto;
+		 		font-size: 26px;
+				font-weight: 400;
+				line-height: 41px;
+			}
+
+			li:last-child {
+				margin-right: 130px;
+			}
+
+			a {
+				text-decoration: none;
+			}
+		}
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
 }
